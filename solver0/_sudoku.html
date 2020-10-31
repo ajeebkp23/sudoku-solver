@@ -1,0 +1,11 @@
+
+    <div class="sudoku-box">
+        {% for box3x3 in boxes %}
+            <div class="box3x3">
+                {% for item in box3x3 %}<div class="item">
+                    <input type="text" value="{{ item }}" name="item">
+                </div>{% endfor %}
+                
+            </div>
+        {% endfor %}
+    </div>

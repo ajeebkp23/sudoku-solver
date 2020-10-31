@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: flex-start;
+}
+.half{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.sudoku-box{
+    border: 1px solid #ccc;
+    display: flex;
+    flex-wrap: wrap;
+}
+.box3x3{
+    width: calc(100%/3 - 6px);
+    display: inline-block;
+    border: 3px solid;
+}
+.box3x3:nth-child(4),
+.box3x3:nth-child(5),
+.box3x3:nth-child(6){
+    border-top: none;
+    border-bottom: none;
+}
+.item{
+    width: calc(100%/3);
+    display: inline-block;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+.item:nth-child(1),
+.item:nth-child(4),
+.item:nth-child(7){
+    border-left: none;
+}
+.item:nth-child(1),
+.item:nth-child(2),
+.item:nth-child(3){
+    border-top: none;
+}
+.item:nth-child(4),
+.item:nth-child(5),
+.item:nth-child(6){
+    border-top: none;
+    border-bottom: none;
+}
+.item:nth-child(7),
+.item:nth-child(8),
+.item:nth-child(9){
+    border-bottom: none;
+}
+.item input{
+    width: calc(100% - 2px);
+    border: none;
+    text-align: center;
+}
